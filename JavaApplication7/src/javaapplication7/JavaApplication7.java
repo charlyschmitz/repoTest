@@ -17,11 +17,38 @@ public class JavaApplication7 {
         // TODO code application logic here
         
         System.out.println(".l.");
+
         for (int i = 0; i < 10; i++) {
             System.out.println(".l.");
         }
         un boata de jamon
+
         
+        boolean esPrimo(int b) {
+
+        try {
+            if (b == 0) {
+                throw new IllegalArgumentException("No se puede determinar si 0 es primo o no");
+            }
+
+            int divisor = 2;
+            int resto;
+            boolean primo = true;
+            while (divisor <= b / 2 && primo == true) {
+
+                resto = b % divisor;
+                if (resto == 0) {
+                    primo = false;
+                }
+                divisor = divisor + 1;
+            }
+            return primo;
+        } catch (IllegalArgumentException ex) {
+            System.out.println("Error -> " + ex.getMessage());
+            return false;
+            dlgkjdlgjdflgjm
+        }
+    }
     }
     
 }
