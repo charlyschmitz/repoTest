@@ -17,6 +17,11 @@ public class JavaApplication7 {
         // TODO code application logic here
         
         System.out.println(".l.");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(".l.");
+        }
+        
     }
     
 }
+
